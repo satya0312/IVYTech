@@ -1,0 +1,35 @@
+package com.ninja.qa.base;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Base {
+	
+	WebDriver driver;
+	
+	public void InitBrowserAndOpenAppli(String browsername) {
+		if(browsername.contentEquals("Chrome")) {
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(options);
+		}
+		else if(browsername.contentEquals("Firefox")) {
+			
+			driver = new FirefoxDriver();
+			
+		}
+		else if(browsername.contentEquals("Edge")) {
+			driver = new EdgeDriver();
+			
+		}
+
+		driver.manage().window().maximize();
+		driver.get("http://www.tutorialsninja.com/demo/");
+		//Thread.sleep(3000);
+		
+	}
+
+}

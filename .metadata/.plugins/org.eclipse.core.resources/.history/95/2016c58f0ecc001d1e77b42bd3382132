@@ -1,0 +1,21 @@
+package com.ninja.qa.testcases;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+
+import com.ninja.qa.base.Base;
+
+public class SearchPage extends Base{
+	
+	WebDriver driver;
+	
+	@AfterMethod
+	public void Set_Up() {
+		driver=InitBrowserAndOpenAppli("Chrome") ;
+	}
+	
+	public void Tear_Down() {
+		driver.quit();
+	}
+
+}

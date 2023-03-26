@@ -1,0 +1,9 @@
+package com.ninja.qa.base;
+
+public class Base {
+	
+	public void InitBrowserAndOpenAppli() {
+		
+	}
+
+}

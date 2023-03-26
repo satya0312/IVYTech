@@ -1,0 +1,34 @@
+package com.ninja.qa.testcases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import com.ninja.qa.base.Base;
+
+public class SearchPage extends Base{
+	
+	WebDriver driver;
+	
+	@BeforeMethod
+	public void Set_Up() {
+		driver=InitBrowserAndOpenAppli("Chrome") ;
+	}
+	
+	@AfterMethod
+	public void Tear_Down() {
+		driver.quit();
+	}
+	
+	
+	public void VerifySearchWithValidProduct() {
+		
+		driver.findElement(By.name("search")).sendKeys("HP");
+		driver.findElement(By.xpath("//div[@id='search']/descendant::button")).click();
+		
+		Assert.assertTrue(driver.findElement(By.linkText("HP LP3065")).isDisplayed());
+	}
+
+}

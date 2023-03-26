@@ -1,0 +1,12 @@
+package com.ninja.qa.testcases;
+
+import com.ninja.qa.base.Base;
+
+public class SearchPage extends Base{
+	
+	public void Set_Up() {
+		driver=InitBrowserAndOpenAppli("Chrome") ;
+		
+	}
+
+}

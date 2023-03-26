@@ -1,0 +1,13 @@
+package com.ninja.qa.base;
+
+import org.openqa.selenium.WebDriver;
+
+public class Base {
+	
+	WebDriver driver;
+	
+	public void InitBrowserAndOpenAppli(String BrowserName) {
+		
+	}
+
+}
