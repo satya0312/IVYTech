@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-26T17:45:55 IST" name="Default suite" finished-at="2023-03-26T17:46:09 IST" duration-ms="14015">
+  <suite started-at="2023-03-26T19:44:36 IST" name="Default suite" finished-at="2023-03-26T19:44:42 IST" duration-ms="6315">
     <groups>
     </groups>
-    <test started-at="2023-03-26T17:45:55 IST" name="Default test" finished-at="2023-03-26T17:46:09 IST" duration-ms="14015">
-      <class name="com.ninja.qa.testcases.LoginPage">
-        <test-method signature="LoginWithValidDetails()[pri:1, instance:com.ninja.qa.testcases.LoginPage@543295b0]" started-at="2023-03-26T17:45:55 IST" name="LoginWithValidDetails" finished-at="2023-03-26T17:46:01 IST" duration-ms="6266" status="PASS">
+    <test started-at="2023-03-26T19:44:36 IST" name="Default test" finished-at="2023-03-26T19:44:42 IST" duration-ms="6315">
+      <class name="com.ninja.qa.testcases.RegisterPage">
+        <test-method is-config="true" signature="Set_UP()[pri:0, instance:com.ninja.qa.testcases.RegisterPage@3a7442c7]" started-at="2023-03-26T19:44:36 IST" name="Set_UP" finished-at="2023-03-26T19:44:39 IST" duration-ms="3862" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithValidDetails -->
-        <test-method signature="LoginWithInvalidDetail()[pri:2, instance:com.ninja.qa.testcases.LoginPage@543295b0]" started-at="2023-03-26T17:46:01 IST" name="LoginWithInvalidDetail" finished-at="2023-03-26T17:46:03 IST" duration-ms="1949" status="PASS">
+        </test-method> <!-- Set_UP -->
+        <test-method signature="VerifyRegisitritionWithoutDetails()[pri:3, instance:com.ninja.qa.testcases.RegisterPage@3a7442c7]" started-at="2023-03-26T19:44:39 IST" name="VerifyRegisitritionWithoutDetails" finished-at="2023-03-26T19:44:42 IST" duration-ms="2281" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithInvalidDetail -->
-        <test-method signature="LoginWithInvaldiEmailAndValidPassword()[pri:3, instance:com.ninja.qa.testcases.LoginPage@543295b0]" started-at="2023-03-26T17:46:03 IST" name="LoginWithInvaldiEmailAndValidPassword" finished-at="2023-03-26T17:46:05 IST" duration-ms="1964" status="PASS">
+        </test-method> <!-- VerifyRegisitritionWithoutDetails -->
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.RegisterPage@3a7442c7]" started-at="2023-03-26T19:44:42 IST" name="Tear_Down" finished-at="2023-03-26T19:44:42 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithInvaldiEmailAndValidPassword -->
-        <test-method signature="LoginWithInvalidEmailAndPassword()[pri:4, instance:com.ninja.qa.testcases.LoginPage@543295b0]" started-at="2023-03-26T17:46:05 IST" name="LoginWithInvalidEmailAndPassword" finished-at="2023-03-26T17:46:07 IST" duration-ms="1987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithInvalidEmailAndPassword -->
-        <test-method signature="LoginwithoutCredentials()[pri:5, instance:com.ninja.qa.testcases.LoginPage@543295b0]" started-at="2023-03-26T17:46:07 IST" name="LoginwithoutCredentials" finished-at="2023-03-26T17:46:09 IST" duration-ms="1817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginwithoutCredentials -->
-      </class> <!-- com.ninja.qa.testcases.LoginPage -->
+        </test-method> <!-- Tear_Down -->
+      </class> <!-- com.ninja.qa.testcases.RegisterPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
