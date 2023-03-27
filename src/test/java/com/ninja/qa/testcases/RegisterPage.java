@@ -5,14 +5,14 @@ import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ninja.qa.base.Base;
+import com.ninja.qa.pageobjects.HomePageObjects;
+import com.ninja.qa.pageobjects.RegisterPageObjects;
 
 public class RegisterPage extends Base{
 	
@@ -25,9 +25,13 @@ public class RegisterPage extends Base{
 	
 	@BeforeMethod
 	public void Set_UP() throws IOException {
+		
+	
 		driver=InitBrowserAndOpenAppli(LoadPropertiesFile("browsername")) ;
-		driver.findElement(By.xpath("//span[@class =\"caret\"]")).click();
-		driver.findElement(By.linkText("Register")).click();		
+		HomePageObjects homepage=new HomePageObjects(driver);
+		homepage.ClickOnMyAccount();
+		homepage.ClickOnRegister();
+				
 	}
 	
 	@AfterMethod
@@ -37,18 +41,20 @@ public class RegisterPage extends Base{
 	
 	
 	@Test(priority =1)
-	public void VerifyRegistrationByManditatoryFileds() {		
-		driver.findElement(By.id("input-firstname")).sendKeys("satya");
-		driver.findElement(By.id("input-lastname")).sendKeys("satyalast");
-		driver.findElement(By.id("input-email")).sendKeys("abc"+GetDatastamp()+"@gmail.com");
-		driver.findElement(By.id("input-telephone")).sendKeys("123456789");
-		driver.findElement(By.id("input-password")).sendKeys("123456");
-		driver.findElement(By.id("input-confirm")).sendKeys("123456");
-		driver.findElement(By.name("agree")).click();		
-		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();	
+	public void VerifyRegistrationByManditatoryFileds() {
+		
+		RegisterPageObjects RegisterPage = new RegisterPageObjects(driver);
+		RegisterPage.EnterFirstName("satya");
+		RegisterPage.EnterLastName("satyalast");
+		RegisterPage.EnterEmail("abc"+GetDatastamp()+"@gmail.com");
+		RegisterPage.EnterPhoneNumber("123456789");
+		RegisterPage.EnterPassword("123456");
+		RegisterPage.EnterConformPassword("123456");
+		RegisterPage.AgreeConditionCheckbox();
+		RegisterPage.ClickOnSubmit();	
 		
 		
-		String ActualMessage =  driver.findElement(By.xpath("//div[@id='content']/h1")).getText();
+		String ActualMessage =  RegisterPage.GetStatusOfAccountCreationSucasseMessage();
 		
 		Assert.assertEquals(ActualMessage, "Your Account Has Been Created!","Account is not created");
 	}
