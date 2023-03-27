@@ -73,8 +73,8 @@ public class RegisterPageObjects {
 		ClickOnSubmit.clear();
 	}
 	
-	public boolean GetStatusOfAccountCreationSucasseMessage() {
-		return AccountCreationSucasseMessage.isDisplayed();
+	public String GetStatusOfAccountCreationSucasseMessage() {
+		return AccountCreationSucasseMessage.getText();
 	}
 	
 	
