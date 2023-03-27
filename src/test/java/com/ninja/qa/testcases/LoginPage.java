@@ -1,5 +1,6 @@
 package com.ninja.qa.testcases;
 
+import java.io.IOException;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -13,7 +14,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LoginPage {
+import com.ninja.qa.base.Base;
+
+public class LoginPage extends Base{
 	
 	WebDriver driver;
 	
@@ -23,28 +26,8 @@ public class LoginPage {
 	}
 	
 	@BeforeMethod
-	public void Set_Up(){
-		
-		String browsername ="Chrome";
-		
-		if(browsername.contentEquals("Chrome")) {
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--remote-allow-origins=*");
-			driver = new ChromeDriver(options);
-		}
-		else if(browsername.contentEquals("Firefox")) {
-			
-			driver = new FirefoxDriver();
-			
-		}
-		else if(browsername.contentEquals("Edge")) {
-			driver = new EdgeDriver();
-			
-		}
-
-		driver.manage().window().maximize();
-		driver.get("http://www.tutorialsninja.com/demo/");
-		//Thread.sleep(3000);
+	public void Set_Up() throws IOException{
+		driver=InitBrowserAndOpenAppli(LoadPropertiesFile("browsername")) ;
 		driver.findElement(By.xpath("//span[@class=\"caret\"]")).click();
 
 		driver.findElement(By.linkText("Login")).click();
@@ -59,11 +42,11 @@ public class LoginPage {
 	
 
 	@Test(priority = 1)
-	public void LoginWithValidDetails() throws InterruptedException {
+	public void LoginWithValidDetails() throws InterruptedException, IOException {
 		
 
-		driver.findElement(By.id("input-email")).sendKeys("tsatya0312@gmail.com");
-		driver.findElement(By.id("input-password")).sendKeys("Satya@0312");
+		driver.findElement(By.id("input-email")).sendKeys(LoadPropertiesFile("ValidEmail"));
+		driver.findElement(By.id("input-password")).sendKeys(LoadPropertiesFile("ValidPassword"));
 		driver.findElement(By.xpath("//input[@value =\"Login\"]")).click();
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed(),
 				"The Edit your account information is not displyes in page ");
@@ -72,25 +55,25 @@ public class LoginPage {
 	}
 
 	@Test(priority = 2)
-	public void LoginWithInvalidDetail() {
+	public void LoginWithInvalidDetail() throws IOException {
 
 		
 
 		driver.findElement(By.id("input-email")).sendKeys("tsatya0312" + GetDatastamp() + "@gmail.com");
-		driver.findElement(By.id("input-password")).sendKeys("Satyda@0312");
+		driver.findElement(By.id("input-password")).sendKeys(LoadTestdata("InvalidPassword"));
 		driver.findElement(By.xpath("//input[@value =\"Login\"]")).click();
 		String ActualErrorMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
-		String ExpectedErrorMessage = " Warning: No match for E-Mail Address and/or Password.";
+		String ExpectedErrorMessage = LoadTestdata("emailPasswrodNoMatchWarning");
 		Assert.assertTrue(ExpectedErrorMessage.contains(ActualErrorMessage), "Expected Error message is not displayed");
 
 
 	}
 
 	@Test(priority = 3)
-	public void LoginWithInvaldiEmailAndValidPassword() {
+	public void LoginWithInvaldiEmailAndValidPassword() throws IOException {
 		
 		driver.findElement(By.id("input-email")).sendKeys("tsatya0312" + GetDatastamp() + "@gmail.com");
-		driver.findElement(By.id("input-password")).sendKeys("Satyda@0312");
+		driver.findElement(By.id("input-password")).sendKeys(LoadPropertiesFile("ValidPassword"));
 		driver.findElement(By.xpath("//input[@value =\"Login\"]")).click();
 		String ActualErrorMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
 		String ExpectedErrorMessage = " Warning: No match for E-Mail Address and/or Password.";
@@ -100,7 +83,7 @@ public class LoginPage {
 	}
 
 	@Test(priority = 4)
-	public void LoginWithInvalidEmailAndPassword() {
+	public void LoginWithInvalidEmailAndInvalidPassword() {
 		
 		driver.findElement(By.id("input-email")).sendKeys("tsatya0312" + GetDatastamp() + "@gmail.com");
 		driver.findElement(By.id("input-password")).sendKeys("Satyda@0312" + GetDatastamp());

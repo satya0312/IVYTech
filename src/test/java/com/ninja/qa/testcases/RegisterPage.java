@@ -1,5 +1,6 @@
 package com.ninja.qa.testcases;
 
+import java.io.IOException;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -11,7 +12,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class RegisterPage {
+import com.ninja.qa.base.Base;
+
+public class RegisterPage extends Base{
 	
 	WebDriver driver ;
 	
@@ -21,12 +24,8 @@ public class RegisterPage {
 	}
 	
 	@BeforeMethod
-	public void Set_UP() {
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(options);		
-		driver.manage().window().maximize();
-		driver.get("http://www.tutorialsninja.com/demo/");
+	public void Set_UP() throws IOException {
+		driver=InitBrowserAndOpenAppli(LoadPropertiesFile("browsername")) ;
 		driver.findElement(By.xpath("//span[@class =\"caret\"]")).click();
 		driver.findElement(By.linkText("Register")).click();		
 	}
@@ -63,7 +62,6 @@ public class RegisterPage {
 		driver.findElement(By.id("input-password")).sendKeys("123456");
 		driver.findElement(By.id("input-confirm")).sendKeys("123456");
 		driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
-		driver.findElement(By.name("agree")).click();		
 		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
 		
 String ActualMessage =  driver.findElement(By.xpath("//div[@id='content']/h1")).getText();
