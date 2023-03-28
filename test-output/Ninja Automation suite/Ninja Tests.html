@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>7/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 28 12:22:52 IST 2023</td>
+<td>Started on:</td><td>Tue Mar 28 16:30:26 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24141 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22185 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ninja.qa.testcases.RegisterPage.VerifyRegisitritionWithoutDetails()'><b>VerifyRegisitritionWithoutDetails</b><br>Test class: com.ninja.qa.testcases.RegisterPage</td>
+<td title='com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByManditatoryFileds()'><b>VerifyRegistrationByManditatoryFileds</b><br>Test class: com.ninja.qa.testcases.RegisterPage</td>
 <td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@type=\&quot;submit\&quot;]&apos; is not a valid XPath expression.
   (Session info: chrome=111.0.5563.146)
@@ -84,9 +84,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b4a73d4bedfbe2f97b483454be152a2, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51068/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b4a73d4bedfbe2f97b483454be152a2
+Command: [807bbaf6973157c508fe43546d064bf9, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52575/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 807bbaf6973157c508fe43546d064bf9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -100,21 +100,21 @@ Session ID: 9b4a73d4bedfbe2f97b483454be152a2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
-	at com.ninja.qa.testcases.RegisterPage.VerifyRegisitritionWithoutDetails(RegisterPage.java:86)
+	at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByManditatoryFileds(RegisterPage.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace46852536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace46852536'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace728746911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace728746911'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@type=\&quot;submit\&quot;]&apos; is not a valid XPath expression.
   (Session info: chrome=111.0.5563.146)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b4a73d4bedfbe2f97b483454be152a2, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51068/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b4a73d4bedfbe2f97b483454be152a2
+Command: [807bbaf6973157c508fe43546d064bf9, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52575/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 807bbaf6973157c508fe43546d064bf9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -133,9 +133,9 @@ Session ID: 9b4a73d4bedfbe2f97b483454be152a2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
-	at com.ninja.qa.testcases.RegisterPage.VerifyRegisitritionWithoutDetails(RegisterPage.java:86)
+	at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByManditatoryFileds(RegisterPage.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,15 +174,15 @@ Session ID: 9b4a73d4bedfbe2f97b483454be152a2
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
 	at com.ninja.qa.base.Base.LoadTestdata(Base.java:36)
-	at com.ninja.qa.testcases.LoginPage.LoginWithInvalidDetail(LoginPage.java:64)
+	at com.ninja.qa.testcases.LoginPage.LoginWithInvalidDetail(LoginPage.java:62)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace254513404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace254513404'><pre>java.io.FileNotFoundException: C:\Users\Satya\eclipse-workspace\IVYTech\src\main\java\com\ninja\qa\config\testdata.properties (The system cannot find the file specified)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace437583344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace437583344'><pre>java.io.FileNotFoundException: C:\Users\Satya\eclipse-workspace\IVYTech\src\main\java\com\ninja\qa\config\testdata.properties (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
 	at com.ninja.qa.base.Base.LoadTestdata(Base.java:36)
-	at com.ninja.qa.testcases.LoginPage.LoginWithInvalidDetail(LoginPage.java:64)
+	at com.ninja.qa.testcases.LoginPage.LoginWithInvalidDetail(LoginPage.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -223,9 +223,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b6f1b7f67aa385031b7ebcd640b461d, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51041/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b6f1b7f67aa385031b7ebcd640b461d
+Command: [d70231f40b3b83d28f6d0bc5f0cc558e, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52602}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52602/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d70231f40b3b83d28f6d0bc5f0cc558e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -239,21 +239,21 @@ Session ID: 8b6f1b7f67aa385031b7ebcd640b461d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
 	at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByAllFields(RegisterPage.java:74)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1385352906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1385352906'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace608174634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608174634'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@type=\&quot;submit\&quot;]&apos; is not a valid XPath expression.
   (Session info: chrome=111.0.5563.146)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b6f1b7f67aa385031b7ebcd640b461d, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51041/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b6f1b7f67aa385031b7ebcd640b461d
+Command: [d70231f40b3b83d28f6d0bc5f0cc558e, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52602}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52602/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d70231f40b3b83d28f6d0bc5f0cc558e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -272,7 +272,7 @@ Session ID: 8b6f1b7f67aa385031b7ebcd640b461d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
 	at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByAllFields(RegisterPage.java:74)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -307,7 +307,7 @@ Session ID: 8b6f1b7f67aa385031b7ebcd640b461d
 <td>0</td>
 <td>com.ninja.qa.testcases.RegisterPage@5386659f</td></tr>
 <tr>
-<td title='com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByManditatoryFileds()'><b>VerifyRegistrationByManditatoryFileds</b><br>Test class: com.ninja.qa.testcases.RegisterPage</td>
+<td title='com.ninja.qa.testcases.RegisterPage.VerifyRegisitritionWithoutDetails()'><b>VerifyRegisitritionWithoutDetails</b><br>Test class: com.ninja.qa.testcases.RegisterPage</td>
 <td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@type=\&quot;submit\&quot;]&apos; is not a valid XPath expression.
   (Session info: chrome=111.0.5563.146)
@@ -315,9 +315,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [260af92668ddba81899464c31bb7c45e, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51013/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 260af92668ddba81899464c31bb7c45e
+Command: [cff06347f391923a66bd7c21a251abf1, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52629/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cff06347f391923a66bd7c21a251abf1
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -331,21 +331,21 @@ Session ID: 260af92668ddba81899464c31bb7c45e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
-	at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByManditatoryFileds(RegisterPage.java:54)
+	at com.ninja.qa.testcases.RegisterPage.VerifyRegisitritionWithoutDetails(RegisterPage.java:86)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace217479224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace217479224'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1808584758", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1808584758'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@type=\&quot;submit\&quot;]&apos; is not a valid XPath expression.
   (Session info: chrome=111.0.5563.146)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [260af92668ddba81899464c31bb7c45e, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51013/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 260af92668ddba81899464c31bb7c45e
+Command: [cff06347f391923a66bd7c21a251abf1, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52629/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cff06347f391923a66bd7c21a251abf1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -364,9 +364,9 @@ Session ID: 260af92668ddba81899464c31bb7c45e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
-	at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByManditatoryFileds(RegisterPage.java:54)
+	at com.ninja.qa.testcases.RegisterPage.VerifyRegisitritionWithoutDetails(RegisterPage.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -408,7 +408,7 @@ Session ID: 260af92668ddba81899464c31bb7c45e
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ninja.qa.testcases.LoginPage.LoginWithInvaldiEmailAndValidPassword()'><b>LoginWithInvaldiEmailAndValidPassword</b><br>Test class: com.ninja.qa.testcases.LoginPage</td>
+<td title='com.ninja.qa.testcases.LoginPage.LoginWithInvalidEmailAndInvalidPassword()'><b>LoginWithInvalidEmailAndInvalidPassword</b><br>Test class: com.ninja.qa.testcases.LoginPage</td>
 <td></td>
 <td>0</td>
 <td>com.ninja.qa.testcases.LoginPage@4c163e3</td></tr>
@@ -423,20 +423,20 @@ Session ID: 260af92668ddba81899464c31bb7c45e
 <td>0</td>
 <td>com.ninja.qa.testcases.SearchPage@4a8355dd</td></tr>
 <tr>
-<td title='com.ninja.qa.testcases.SearchPage.VerifySearchWithValidProduct()'><b>VerifySearchWithValidProduct</b><br>Test class: com.ninja.qa.testcases.SearchPage</td>
-<td></td>
-<td>0</td>
-<td>com.ninja.qa.testcases.SearchPage@4a8355dd</td></tr>
-<tr>
 <td title='com.ninja.qa.testcases.LoginPage.LoginWithValidDetails()'><b>LoginWithValidDetails</b><br>Test class: com.ninja.qa.testcases.LoginPage<br>Parameters: tsatya0312@gmail.com, Satya@0312</td>
 <td></td>
 <td>0</td>
 <td>com.ninja.qa.testcases.LoginPage@4c163e3</td></tr>
 <tr>
-<td title='com.ninja.qa.testcases.LoginPage.LoginWithInvalidEmailAndInvalidPassword()'><b>LoginWithInvalidEmailAndInvalidPassword</b><br>Test class: com.ninja.qa.testcases.LoginPage</td>
+<td title='com.ninja.qa.testcases.LoginPage.LoginWithInvaldiEmailAndValidPassword()'><b>LoginWithInvaldiEmailAndValidPassword</b><br>Test class: com.ninja.qa.testcases.LoginPage</td>
 <td></td>
 <td>0</td>
 <td>com.ninja.qa.testcases.LoginPage@4c163e3</td></tr>
+<tr>
+<td title='com.ninja.qa.testcases.SearchPage.VerifySearchWithValidProduct()'><b>VerifySearchWithValidProduct</b><br>Test class: com.ninja.qa.testcases.SearchPage</td>
+<td></td>
+<td>0</td>
+<td>com.ninja.qa.testcases.SearchPage@4a8355dd</td></tr>
 <tr>
 <td title='com.ninja.qa.testcases.SearchPage.VerifySearchwithInvalidProduct()'><b>VerifySearchwithInvalidProduct</b><br>Test class: com.ninja.qa.testcases.SearchPage</td>
 <td></td>

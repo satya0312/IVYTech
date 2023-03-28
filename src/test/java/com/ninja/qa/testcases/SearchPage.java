@@ -13,7 +13,7 @@ import com.ninja.qa.base.Base;
 
 public class SearchPage extends Base {
 
-	WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeMethod
 	public void Set_Up() throws IOException {

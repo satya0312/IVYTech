@@ -10,6 +10,10 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
 
 public class Utilis {
 	
@@ -54,15 +58,22 @@ public class Utilis {
 				 case BOOLEAN:
 					 data[i][j]= cell.getBooleanCellValue();
 					 break;
-				 }
-				 
-			 }
-			 
+				 }				 
+			 }			 
 		 }
-		 return data;
-		
+		 return data;		
 	}
 	
-	
+	public static String CaptureScreenShot(WebDriver driver, String TestName) {
+		
+		File scrScreenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String DestinationScreenshotPath = System.getProperty("user.dir") + "\\Screenshots\\" + TestName + ".png";
+		try {
+			FileHandler.copy(scrScreenShot, new File(DestinationScreenshotPath));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return DestinationScreenshotPath;
+	}
 
 }

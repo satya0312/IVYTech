@@ -2,8 +2,6 @@ package com.ninja.qa.testcases;
 
 import java.io.IOException;
 import java.util.Date;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -19,7 +17,7 @@ import com.ninja.qa.utilities.Utilis;
 
 public class LoginPage extends Base {
 
-	WebDriver driver;
+	public WebDriver driver;
 	LoginPageObjects LoginPage;
 
 	public String GetDatastamp() {

@@ -16,7 +16,7 @@ import com.ninja.qa.pageobjects.RegisterPageObjects;
 
 public class RegisterPage extends Base{
 	
-	WebDriver driver ;
+	public WebDriver driver ;
 	
 	public String GetDatastamp() {
 		Date date =new Date();
