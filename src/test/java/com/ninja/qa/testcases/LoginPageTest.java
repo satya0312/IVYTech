@@ -15,7 +15,7 @@ import com.ninja.qa.pageobjects.LoginPageObjects;
 import com.ninja.qa.pageobjects.MyAccountPageObjects;
 import com.ninja.qa.utilities.Utilis;
 
-public class LoginPage extends Base {
+public class LoginPageTest extends Base {
 
 	public WebDriver driver;
 	LoginPageObjects LoginPage;

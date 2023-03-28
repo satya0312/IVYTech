@@ -14,7 +14,7 @@ import com.ninja.qa.base.Base;
 import com.ninja.qa.pageobjects.HomePageObjects;
 import com.ninja.qa.pageobjects.RegisterPageObjects;
 
-public class RegisterPage extends Base{
+public class RegisterPageTest extends Base{
 	
 	public WebDriver driver ;
 	

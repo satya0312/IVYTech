@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import com.ninja.qa.base.Base;
 
-public class SearchPage extends Base {
+public class SearchPageTest extends Base {
 
 	public WebDriver driver;
 
