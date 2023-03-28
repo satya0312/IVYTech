@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="7" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-27T23:30:28 IST" name="Default suite" finished-at="2023-03-27T23:30:41 IST" duration-ms="12762">
+  <suite started-at="2023-03-28T12:22:52 IST" name="Ninja Automation suite" finished-at="2023-03-28T12:23:16 IST" duration-ms="24141">
     <groups>
     </groups>
-    <test started-at="2023-03-27T23:30:28 IST" name="Default test" finished-at="2023-03-27T23:30:41 IST" duration-ms="12762">
+    <test started-at="2023-03-28T12:22:52 IST" name="Ninja Tests" finished-at="2023-03-28T12:23:16 IST" duration-ms="24141">
       <class name="com.ninja.qa.testcases.LoginPage">
-        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:28 IST" name="Set_Up" finished-at="2023-03-27T23:30:31 IST" duration-ms="2990" status="PASS">
+        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:00 IST" name="Set_Up" finished-at="2023-03-28T12:23:02 IST" duration-ms="1447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Set_Up -->
-        <test-method signature="LoginWithValidDetails(java.lang.String,java.lang.String)[pri:1, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:31 IST" name="LoginWithValidDetails" data-provider="ValidCredentialsSupplier" finished-at="2023-03-27T23:30:32 IST" duration-ms="424" status="PASS">
+        <test-method signature="LoginWithValidDetails(java.lang.String,java.lang.String)[pri:1, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:02 IST" name="LoginWithValidDetails" data-provider="ValidCredentialsSupplier" finished-at="2023-03-28T12:23:02 IST" duration-ms="454" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithValidDetails -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:32 IST" name="Tear_Down" finished-at="2023-03-27T23:30:32 IST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:02 IST" name="Tear_Down" finished-at="2023-03-28T12:23:02 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:32 IST" name="Set_Up" finished-at="2023-03-27T23:30:34 IST" duration-ms="1658" status="PASS">
+        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:02 IST" name="Set_Up" finished-at="2023-03-28T12:23:04 IST" duration-ms="1469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Set_Up -->
-        <test-method signature="LoginWithInvalidDetail()[pri:2, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:34 IST" name="LoginWithInvalidDetail" finished-at="2023-03-27T23:30:34 IST" duration-ms="92" status="FAIL">
+        <test-method signature="LoginWithInvalidDetail()[pri:2, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:04 IST" name="LoginWithInvalidDetail" finished-at="2023-03-28T12:23:04 IST" duration-ms="2" status="FAIL">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\Users\Satya\eclipse-workspace\IVYTech\src\main\java\com\ninja\qa\config\testdata.properties (The system cannot find the file specified)]]>
@@ -46,7 +46,7 @@ at java.base/java.io.FileInputStream.open0(Native Method)
 at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
 at com.ninja.qa.base.Base.LoadTestdata(Base.java:36)
-at com.ninja.qa.testcases.LoginPage.LoginWithInvalidDetail(LoginPage.java:65)
+at com.ninja.qa.testcases.LoginPage.LoginWithInvalidDetail(LoginPage.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,47 +81,351 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithInvalidDetail -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:34 IST" name="Tear_Down" finished-at="2023-03-27T23:30:34 IST" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:04 IST" name="Tear_Down" finished-at="2023-03-28T12:23:04 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:34 IST" name="Set_Up" finished-at="2023-03-27T23:30:35 IST" duration-ms="1597" status="PASS">
+        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:04 IST" name="Set_Up" finished-at="2023-03-28T12:23:05 IST" duration-ms="1531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Set_Up -->
-        <test-method signature="LoginWithInvaldiEmailAndValidPassword()[pri:3, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:35 IST" name="LoginWithInvaldiEmailAndValidPassword" finished-at="2023-03-27T23:30:36 IST" duration-ms="378" status="PASS">
+        <test-method signature="LoginWithInvaldiEmailAndValidPassword()[pri:3, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:05 IST" name="LoginWithInvaldiEmailAndValidPassword" finished-at="2023-03-28T12:23:06 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithInvaldiEmailAndValidPassword -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:36 IST" name="Tear_Down" finished-at="2023-03-27T23:30:36 IST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:06 IST" name="Tear_Down" finished-at="2023-03-28T12:23:06 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:36 IST" name="Set_Up" finished-at="2023-03-27T23:30:38 IST" duration-ms="1573" status="PASS">
+        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:06 IST" name="Set_Up" finished-at="2023-03-28T12:23:08 IST" duration-ms="2743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Set_Up -->
-        <test-method signature="LoginWithInvalidEmailAndInvalidPassword()[pri:4, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:38 IST" name="LoginWithInvalidEmailAndInvalidPassword" finished-at="2023-03-27T23:30:38 IST" duration-ms="393" status="PASS">
+        <test-method signature="LoginWithInvalidEmailAndInvalidPassword()[pri:4, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:08 IST" name="LoginWithInvalidEmailAndInvalidPassword" finished-at="2023-03-28T12:23:09 IST" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithInvalidEmailAndInvalidPassword -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:38 IST" name="Tear_Down" finished-at="2023-03-27T23:30:38 IST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:09 IST" name="Tear_Down" finished-at="2023-03-28T12:23:09 IST" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:38 IST" name="Set_Up" finished-at="2023-03-27T23:30:40 IST" duration-ms="2199" status="PASS">
+        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:09 IST" name="Set_Up" finished-at="2023-03-28T12:23:10 IST" duration-ms="1517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Set_Up -->
-        <test-method signature="LoginwithoutCredentials()[pri:5, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:40 IST" name="LoginwithoutCredentials" finished-at="2023-03-27T23:30:41 IST" duration-ms="336" status="PASS">
+        <test-method signature="LoginwithoutCredentials()[pri:5, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:10 IST" name="LoginwithoutCredentials" finished-at="2023-03-28T12:23:11 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginwithoutCredentials -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@273444fe]" started-at="2023-03-27T23:30:41 IST" name="Tear_Down" finished-at="2023-03-27T23:30:41 IST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.LoginPage@4c163e3]" started-at="2023-03-28T12:23:11 IST" name="Tear_Down" finished-at="2023-03-28T12:23:11 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tear_Down -->
       </class> <!-- com.ninja.qa.testcases.LoginPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.ninja.qa.testcases.SearchPage">
+        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:11 IST" name="Set_Up" finished-at="2023-03-28T12:23:12 IST" duration-ms="1186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Set_Up -->
+        <test-method signature="VerifySearchWithValidProduct()[pri:1, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:12 IST" name="VerifySearchWithValidProduct" finished-at="2023-03-28T12:23:12 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchWithValidProduct -->
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:12 IST" name="Tear_Down" finished-at="2023-03-28T12:23:12 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:12 IST" name="Set_Up" finished-at="2023-03-28T12:23:14 IST" duration-ms="1196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Set_Up -->
+        <test-method signature="VerifySearchwithInvalidProduct()[pri:2, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:14 IST" name="VerifySearchwithInvalidProduct" finished-at="2023-03-28T12:23:14 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchwithInvalidProduct -->
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:14 IST" name="Tear_Down" finished-at="2023-03-28T12:23:14 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method is-config="true" signature="Set_Up()[pri:0, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:14 IST" name="Set_Up" finished-at="2023-03-28T12:23:15 IST" duration-ms="1475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Set_Up -->
+        <test-method signature="VerifySearchwithoutdetails()[pri:3, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:15 IST" name="VerifySearchwithoutdetails" finished-at="2023-03-28T12:23:16 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchwithoutdetails -->
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.SearchPage@4a8355dd]" started-at="2023-03-28T12:23:16 IST" name="Tear_Down" finished-at="2023-03-28T12:23:16 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+      </class> <!-- com.ninja.qa.testcases.SearchPage -->
+      <class name="com.ninja.qa.testcases.RegisterPage">
+        <test-method is-config="true" signature="Set_UP()[pri:0, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:22:52 IST" name="Set_UP" finished-at="2023-03-28T12:22:55 IST" duration-ms="3695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Set_UP -->
+        <test-method signature="VerifyRegistrationByManditatoryFileds()[pri:1, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:22:55 IST" name="VerifyRegistrationByManditatoryFileds" finished-at="2023-03-28T12:22:56 IST" duration-ms="384" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //input[@type=\"submit\"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type=\"submit\"]' is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [260af92668ddba81899464c31bb7c45e, findElement {using=xpath, value=//input[@type=\"submit\"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51013/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 260af92668ddba81899464c31bb7c45e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\"submit\"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type=\"submit\"]' is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [260af92668ddba81899464c31bb7c45e, findElement {using=xpath, value=//input[@type=\"submit\"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51013/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 260af92668ddba81899464c31bb7c45e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
+at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByManditatoryFileds(RegisterPage.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRegistrationByManditatoryFileds -->
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:22:56 IST" name="Tear_Down" finished-at="2023-03-28T12:22:56 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method is-config="true" signature="Set_UP()[pri:0, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:22:56 IST" name="Set_UP" finished-at="2023-03-28T12:22:58 IST" duration-ms="1588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Set_UP -->
+        <test-method signature="VerifyRegistrationByAllFields()[pri:2, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:22:58 IST" name="VerifyRegistrationByAllFields" finished-at="2023-03-28T12:22:58 IST" duration-ms="354" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //input[@type=\"submit\"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type=\"submit\"]' is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b6f1b7f67aa385031b7ebcd640b461d, findElement {using=xpath, value=//input[@type=\"submit\"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51041/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b6f1b7f67aa385031b7ebcd640b461d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\"submit\"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type=\"submit\"]' is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b6f1b7f67aa385031b7ebcd640b461d, findElement {using=xpath, value=//input[@type=\"submit\"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51041/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b6f1b7f67aa385031b7ebcd640b461d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
+at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByAllFields(RegisterPage.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRegistrationByAllFields -->
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:22:58 IST" name="Tear_Down" finished-at="2023-03-28T12:22:58 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+        <test-method is-config="true" signature="Set_UP()[pri:0, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:22:58 IST" name="Set_UP" finished-at="2023-03-28T12:23:00 IST" duration-ms="1509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Set_UP -->
+        <test-method signature="VerifyRegisitritionWithoutDetails()[pri:3, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:23:00 IST" name="VerifyRegisitritionWithoutDetails" finished-at="2023-03-28T12:23:00 IST" duration-ms="22" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //input[@type=\"submit\"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type=\"submit\"]' is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b4a73d4bedfbe2f97b483454be152a2, findElement {using=xpath, value=//input[@type=\"submit\"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51068/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b4a73d4bedfbe2f97b483454be152a2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\"submit\"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@type=\"submit\"]' is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b4a73d4bedfbe2f97b483454be152a2, findElement {using=xpath, value=//input[@type=\"submit\"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51068/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b4a73d4bedfbe2f97b483454be152a2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
+at com.ninja.qa.testcases.RegisterPage.VerifyRegisitritionWithoutDetails(RegisterPage.java:86)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRegisitritionWithoutDetails -->
+        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:com.ninja.qa.testcases.RegisterPage@5386659f]" started-at="2023-03-28T12:23:00 IST" name="Tear_Down" finished-at="2023-03-28T12:23:00 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear_Down -->
+      </class> <!-- com.ninja.qa.testcases.RegisterPage -->
+    </test> <!-- Ninja Tests -->
+  </suite> <!-- Ninja Automation suite -->
 </testng-results>

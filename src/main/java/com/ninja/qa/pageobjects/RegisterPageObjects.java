@@ -35,6 +35,9 @@ public class RegisterPageObjects {
 	@FindBy(xpath="//div[@id='content']/h1")
 	private WebElement AccountCreationSucasseMessage;
 	
+	@FindBy(xpath="//input[@name='newsletter'][@value='1']")
+	private WebElement SelectNewsLetter;
+	
 	
 
 	
@@ -77,7 +80,9 @@ public class RegisterPageObjects {
 		return AccountCreationSucasseMessage.getText();
 	}
 	
-	
+	public void SelectNewsLetter() {
+		SelectNewsLetter.click();
+	}
 	
 
 }

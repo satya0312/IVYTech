@@ -20,6 +20,7 @@ import com.ninja.qa.utilities.Utilis;
 public class LoginPage extends Base {
 
 	WebDriver driver;
+	LoginPageObjects LoginPage;
 
 	public String GetDatastamp() {
 		Date date = new Date();
@@ -32,7 +33,7 @@ public class LoginPage extends Base {
 
 		HomePageObjects homepage = new HomePageObjects(driver);
 		homepage.ClickOnMyAccount();
-		homepage.ClickOnLogin();
+		LoginPage = homepage.ClickOnLogin();
 
 	}
 
@@ -43,10 +44,10 @@ public class LoginPage extends Base {
 
 	@Test(priority = 1, dataProvider = "ValidCredentialsSupplier")
 	public void LoginWithValidDetails(String email, String Password) throws InterruptedException, IOException {
-		LoginPageObjects LoginPage = new LoginPageObjects(driver);
-		LoginPage.ProvideEmailId(email);
-		LoginPage.ProvidePassword(Password);
-		LoginPage.ClickOnLoginButn();
+		
+		//login with email,Password and click on Submit button
+		LoginPage.LoginWithUserNmaePassword(email, Password);		
+		
 		MyAccountPageObjects AcountPage = new MyAccountPageObjects(driver);
 		Assert.assertTrue(AcountPage.getDisplayedStatusOfEditYourAccountInformation(),
 				"The Edit your account information is not displyes in page ");
@@ -60,24 +61,17 @@ public class LoginPage extends Base {
 
 	@Test(priority = 2)
 	public void LoginWithInvalidDetail() throws IOException {
-		LoginPageObjects LoginPage = new LoginPageObjects(driver);
-		LoginPage.ProvideEmailId("tsatya0312" + GetDatastamp() + "@gmail.com");
-		LoginPage.ProvidePassword(LoadTestdata("InvalidPassword"));
-		LoginPage.ClickOnLoginButn();
+		LoginPage.LoginWithUserNmaePassword(GetDatastamp() + "@gmail.com", LoadTestdata("InvalidPassword"));	
 		
-		String ActualErrorMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]"))
-				.getText();
+				
 		String ExpectedErrorMessage = LoadTestdata("emailPasswrodNoMatchWarning");
-		Assert.assertTrue(ExpectedErrorMessage.contains(ActualErrorMessage), "Expected Error message is not displayed");
+		Assert.assertTrue(ExpectedErrorMessage.contains(LoginPage.MessageNomatchforEMailandPassword()), "Expected Error message is not displayed");
 	}
 
 	@Test(priority = 3)
 	public void LoginWithInvaldiEmailAndValidPassword() throws IOException {
+		LoginPage.LoginWithUserNmaePassword("GetDatastamp() + \"@gmail.com", LoadPropertiesFile("ValidPassword"));
 		
-		LoginPageObjects LoginPage = new LoginPageObjects(driver);
-		LoginPage.ProvideEmailId("tsatya0312" + GetDatastamp() + "@gmail.com");
-		LoginPage.ProvidePassword(LoadPropertiesFile("ValidPassword"));
-		LoginPage.ClickOnLoginButn();
 		
 		String ActualErrorMessage = LoginPage.NomatchforEMailandPassword();
 		String ExpectedErrorMessage = " Warning: No match for E-Mail Address and/or Password.";
@@ -87,8 +81,7 @@ public class LoginPage extends Base {
 	@Test(priority = 4)
 	public void LoginWithInvalidEmailAndInvalidPassword() {
 		
-		LoginPageObjects LoginPage = new LoginPageObjects(driver);
-		LoginPage.ProvideEmailId("tsatya0312" + GetDatastamp() + "@gmail.com");
+		LoginPageObjects LoginPage = new LoginPageObjects(driver);	LoginPage.ProvideEmailId("tsatya0312" + GetDatastamp() + "@gmail.com");
 		LoginPage.ProvidePassword("Satyda@0312" + GetDatastamp());
 		LoginPage.ClickOnLoginButn();
 
@@ -101,7 +94,7 @@ public class LoginPage extends Base {
 
 	@Test(priority = 5)
 	public void LoginwithoutCredentials() {
-		LoginPageObjects LoginPage = new LoginPageObjects(driver);
+		
 
 		LoginPage.ClickOnLoginButn();
 		String ActualErrorMessage = LoginPage.NomatchforEMailandPassword();

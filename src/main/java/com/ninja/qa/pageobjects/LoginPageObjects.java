@@ -47,6 +47,15 @@ public class LoginPageObjects {
 	public String NomatchforEMailandPassword() {
 		return NomatchforEMailandPassword.getText();
 	}
+	public String MessageNomatchforEMailandPassword() {
+		return NomatchforEMailandPassword.getText();
+	}
+	
+	public void LoginWithUserNmaePassword(String Email, String Password) {
+		EmailField.sendKeys(Email);
+		PasswordField.sendKeys(Password);
+		LoginButton.click();
+	}
 	
 	
 

@@ -8,49 +8,109 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,762</td><td></td><td></td></tr>
+<tr><th colspan="8">Ninja Automation suite</th></tr>
+<tr><td><a href="#t0">Ninja Tests</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">24,141</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ninja.qa.testcases.LoginPage</td><td><a href="#m0">LoginWithInvalidDetail</a></td><td rowspan="1">1679940034213</td><td rowspan="1">92</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.ninja.qa.testcases.LoginPage</td><td><a href="#m1">LoginWithInvaldiEmailAndValidPassword</a></td><td rowspan="1">1679940035977</td><td rowspan="1">378</td></tr><tr class="passedeven"><td><a href="#m2">LoginWithInvalidEmailAndInvalidPassword</a></td><td rowspan="1">1679940038001</td><td rowspan="1">393</td></tr><tr class="passedeven"><td><a href="#m3">LoginWithValidDetails</a></td><td rowspan="1">1679940031988</td><td rowspan="1">424</td></tr><tr class="passedeven"><td><a href="#m4">LoginwithoutCredentials</a></td><td rowspan="1">1679940040709</td><td rowspan="1">336</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Ninja Automation suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Ninja Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ninja.qa.testcases.LoginPage</td><td><a href="#m0">LoginWithInvalidDetail</a></td><td rowspan="1">1679986384122</td><td rowspan="1">2</td></tr><tr class="failedodd"><td rowspan="3">com.ninja.qa.testcases.RegisterPage</td><td><a href="#m1">VerifyRegisitritionWithoutDetails</a></td><td rowspan="1">1679986380009</td><td rowspan="1">22</td></tr><tr class="failedodd"><td><a href="#m2">VerifyRegistrationByAllFields</a></td><td rowspan="1">1679986378024</td><td rowspan="1">354</td></tr><tr class="failedodd"><td><a href="#m3">VerifyRegistrationByManditatoryFileds</a></td><td rowspan="1">1679986375921</td><td rowspan="1">384</td></tr><tr><th colspan="4">Ninja Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.ninja.qa.testcases.LoginPage</td><td><a href="#m4">LoginWithInvaldiEmailAndValidPassword</a></td><td rowspan="1">1679986385736</td><td rowspan="1">362</td></tr><tr class="passedeven"><td><a href="#m5">LoginWithInvalidEmailAndInvalidPassword</a></td><td rowspan="1">1679986388956</td><td rowspan="1">412</td></tr><tr class="passedeven"><td><a href="#m6">LoginWithValidDetails</a></td><td rowspan="1">1679986382070</td><td rowspan="1">454</td></tr><tr class="passedeven"><td><a href="#m7">LoginwithoutCredentials</a></td><td rowspan="1">1679986390957</td><td rowspan="1">260</td></tr><tr class="passedodd"><td rowspan="3">com.ninja.qa.testcases.SearchPage</td><td><a href="#m8">VerifySearchWithValidProduct</a></td><td rowspan="1">1679986392471</td><td rowspan="1">312</td></tr><tr class="passedodd"><td><a href="#m9">VerifySearchwithInvalidProduct</a></td><td rowspan="1">1679986394100</td><td rowspan="1">308</td></tr><tr class="passedodd"><td><a href="#m10">VerifySearchwithoutdetails</a></td><td rowspan="1">1679986395971</td><td rowspan="1">252</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.ninja.qa.testcases.LoginPage#LoginWithInvalidDetail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\Satya\eclipse-workspace\IVYTech\src\main\java\com\ninja\qa\config\testdata.properties (The system cannot find the file specified)
+<h2>Ninja Tests</h2><h3 id="m0">com.ninja.qa.testcases.LoginPage#LoginWithInvalidDetail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\Satya\eclipse-workspace\IVYTech\src\main\java\com\ninja\qa\config\testdata.properties (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
 	at com.ninja.qa.base.Base.LoadTestdata(Base.java:36)
-	at com.ninja.qa.testcases.LoginPage.LoginWithInvalidDetail(LoginPage.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at com.ninja.qa.testcases.LoginPage.LoginWithInvalidDetail(LoginPage.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.ninja.qa.testcases.LoginPage#LoginWithInvaldiEmailAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.ninja.qa.testcases.LoginPage#LoginWithInvalidEmailAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.ninja.qa.testcases.LoginPage#LoginWithValidDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>tsatya0312@gmail.com</td><td>Satya@0312</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.ninja.qa.testcases.LoginPage#LoginwithoutCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ninja.qa.testcases.RegisterPage#VerifyRegisitritionWithoutDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@type=\&quot;submit\&quot;]&apos; is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b4a73d4bedfbe2f97b483454be152a2, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51068/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b4a73d4bedfbe2f97b483454be152a2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
+	at com.ninja.qa.testcases.RegisterPage.VerifyRegisitritionWithoutDetails(RegisterPage.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ninja.qa.testcases.RegisterPage#VerifyRegistrationByAllFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@type=\&quot;submit\&quot;]&apos; is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b6f1b7f67aa385031b7ebcd640b461d, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51041/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b6f1b7f67aa385031b7ebcd640b461d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
+	at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByAllFields(RegisterPage.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.ninja.qa.testcases.RegisterPage#VerifyRegistrationByManditatoryFileds</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type=\&quot;submit\&quot;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@type=\&quot;submit\&quot;]&apos; is not a valid XPath expression.
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [260af92668ddba81899464c31bb7c45e, findElement {using=xpath, value=//input[@type=\&quot;submit\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Satya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51013/devtoo..., se:cdpVersion: 111.0.5563.146, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 260af92668ddba81899464c31bb7c45e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.clear(Unknown Source)
+	at com.ninja.qa.pageobjects.RegisterPageObjects.ClickOnSubmit(RegisterPageObjects.java:76)
+	at com.ninja.qa.testcases.RegisterPage.VerifyRegistrationByManditatoryFileds(RegisterPage.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ninja.qa.testcases.LoginPage#LoginWithInvaldiEmailAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.ninja.qa.testcases.LoginPage#LoginWithInvalidEmailAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.ninja.qa.testcases.LoginPage#LoginWithValidDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>tsatya0312@gmail.com</td><td>Satya@0312</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.ninja.qa.testcases.LoginPage#LoginwithoutCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.ninja.qa.testcases.SearchPage#VerifySearchWithValidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.ninja.qa.testcases.SearchPage#VerifySearchwithInvalidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.ninja.qa.testcases.SearchPage#VerifySearchwithoutdetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

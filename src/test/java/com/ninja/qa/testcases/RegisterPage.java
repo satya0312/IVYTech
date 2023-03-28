@@ -61,14 +61,19 @@ public class RegisterPage extends Base{
 	
 	@Test(priority =2)
 	public void VerifyRegistrationByAllFields() {
-		driver.findElement(By.id("input-firstname")).sendKeys("satya");
-		driver.findElement(By.id("input-lastname")).sendKeys("satyalast");
-		driver.findElement(By.id("input-email")).sendKeys("abc"+GetDatastamp()+"@gmail.com");
-		driver.findElement(By.id("input-telephone")).sendKeys("123456789");
-		driver.findElement(By.id("input-password")).sendKeys("123456");
-		driver.findElement(By.id("input-confirm")).sendKeys("123456");
-		driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
-		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
+		
+		RegisterPageObjects RegisterPage = new RegisterPageObjects(driver);
+		RegisterPage.EnterFirstName("satya");
+		RegisterPage.EnterLastName("satyalast");
+		RegisterPage.EnterEmail("abc"+GetDatastamp()+"@gmail.com");
+		RegisterPage.EnterPhoneNumber("123456789");
+		RegisterPage.EnterPassword("123456");
+		RegisterPage.EnterConformPassword("123456");
+		
+		RegisterPage.SelectNewsLetter();
+		RegisterPage.ClickOnSubmit();
+		
+		
 		
 String ActualMessage =  driver.findElement(By.xpath("//div[@id='content']/h1")).getText();
 		
@@ -77,7 +82,8 @@ String ActualMessage =  driver.findElement(By.xpath("//div[@id='content']/h1")).
 	
 	@Test(priority =3)
 	public void VerifyRegisitritionWithoutDetails() throws InterruptedException {
-		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
+		RegisterPageObjects RegisterPage = new RegisterPageObjects(driver);
+		RegisterPage.ClickOnSubmit();
 		
 		String ActualErrorMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
 	

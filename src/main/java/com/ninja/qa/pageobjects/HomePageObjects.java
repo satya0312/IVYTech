@@ -30,8 +30,9 @@ public class HomePageObjects {
 		MyAccountDropMenu.click();
 	}
 
-	public void ClickOnLogin() {
+	public LoginPageObjects ClickOnLogin() {
 		LoginOption.click();
+		return new LoginPageObjects(driver);
 	}
 	
 	public void ClickOnRegister() {

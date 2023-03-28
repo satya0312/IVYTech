@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Ninja Automation suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.ninja.qa.listeners.NinjaListners"/>
+  </listeners>
+  <test thread-count="5" name="Ninja Tests(failed)">
     <classes>
       <class name="com.ninja.qa.testcases.LoginPage">
         <methods>
@@ -10,6 +13,15 @@
           <include name="Set_Up"/>
         </methods>
       </class> <!-- com.ninja.qa.testcases.LoginPage -->
+      <class name="com.ninja.qa.testcases.RegisterPage">
+        <methods>
+          <include name="Set_UP"/>
+          <include name="VerifyRegistrationByAllFields"/>
+          <include name="Tear_Down"/>
+          <include name="VerifyRegisitritionWithoutDetails"/>
+          <include name="VerifyRegistrationByManditatoryFileds"/>
+        </methods>
+      </class> <!-- com.ninja.qa.testcases.RegisterPage -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Ninja Tests(failed) -->
+</suite> <!-- Failed suite [Ninja Automation suite] -->
